@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sass-bem/static/css/main.66691f6b.css",
+    "main.css": "/sass-bem/static/css/main.65f0514f.css",
     "main.js": "/sass-bem/static/js/main.a494d8a6.js",
     "static/js/453.150dc45e.chunk.js": "/sass-bem/static/js/453.150dc45e.chunk.js",
     "static/media/main-article.png": "/sass-bem/static/media/main-article.4aab6891aa0154909619.png",
@@ -17,12 +17,12 @@
     "static/media/menu.svg": "/sass-bem/static/media/menu.7e65dcdbfcb4fb7f60ea90f61a0ab5f8.svg",
     "static/media/close.svg": "/sass-bem/static/media/close.60d4f41347544050a7b9d2915be4e499.svg",
     "index.html": "/sass-bem/index.html",
-    "main.66691f6b.css.map": "/sass-bem/static/css/main.66691f6b.css.map",
+    "main.65f0514f.css.map": "/sass-bem/static/css/main.65f0514f.css.map",
     "main.a494d8a6.js.map": "/sass-bem/static/js/main.a494d8a6.js.map",
     "453.150dc45e.chunk.js.map": "/sass-bem/static/js/453.150dc45e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66691f6b.css",
+    "static/css/main.65f0514f.css",
     "static/js/main.a494d8a6.js"
   ]
 }
