@@ -1,0 +1,65 @@
+@use '../../styles/rwd' as *;
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.main {
+  background: linear-gradient(180deg, #0D1E48, #304571);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-x: hidden;
+
+  &__articles {
+    padding: 50px 20px;
+
+    &__title {
+      margin-bottom: 30px;
+      @include smallTitle;
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      @include desktop {
+        gap: 40px;
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      padding-top: 50px;
+
+      span {
+        @include smallTitle;
+      }
+
+      p {
+        @include smallText;
+      }
+
+      @include tablet {
+        padding-top: 55px;
+      }
+      @include desktop {
+        padding-top: 60px;
+        gap: 17px;
+      }
+    }
+
+    @include tablet {
+      padding: 55px 30px 53px;
+    }
+
+    @include desktop {
+      padding: 58px 80px 60px;
+    }
+  }
+}

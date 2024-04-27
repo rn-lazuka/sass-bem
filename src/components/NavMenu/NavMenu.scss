@@ -1,0 +1,46 @@
+@use '../../styles/rwd' as *;
+@import '../../styles/variables';
+
+.nav-menu {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  &__link {
+    font-size: 18px;
+    transition: fill 0.3s ease;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    span {
+      margin-right: 30px;
+    }
+
+    :hover {
+      background: linear-gradient(90deg, $yellow, $pink);
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 0.3s ease;
+      color: transparent;
+
+      .icon-gradient {
+        opacity: 1.0;
+      }
+    }
+
+    :hover svg {
+      color: white;
+    }
+
+
+  }
+
+  @include tabletUp {
+    display: flex;
+    flex-direction: row;
+    gap: 28px
+  }
+}

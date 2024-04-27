@@ -1,0 +1,69 @@
+@use '../../styles/rwd' as *;
+@import '../../styles/variables';
+
+.small-text {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 800;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.normal-text {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 700;
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+}
+
+.button {
+  cursor: pointer;
+
+  &--text {
+    background-color: transparent;
+    border-color: transparent;
+    color: $yellow;
+    @extend .small-text;
+  }
+
+  &--contained {
+    border: solid 2px $yellow;
+    border-radius: 100px;
+    background-color: $yellow;
+    color: $black;
+    padding: 5px 40px;
+    @extend .normal-text;
+
+    @include tabletUp {
+      padding: 12px 40px;
+    }
+  }
+
+  &--outlined {
+    border: solid 2px $yellow;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $yellow;
+    padding: 5px 40px;
+    @extend .normal-text;
+
+    @include desktop {
+      padding: 12px 40px;
+    }
+  }
+}
+
+.button:hover {
+  opacity: 0.6;
+}

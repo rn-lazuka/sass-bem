@@ -1,0 +1,77 @@
+@import "rwd";
+@import "variables";
+
+@mixin title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  color: $white;
+  @include tablet {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @include desktop {
+    font-size: 46px;
+    line-height: 46px;
+  }
+}
+
+@mixin smallTitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $white;
+  @include tablet {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  @include desktop {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+
+@mixin bigText {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@mixin text {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  color: $white;
+  @include desktop {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@mixin smallText {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #AAB2C3;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

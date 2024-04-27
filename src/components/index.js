@@ -1,0 +1,6 @@
+export * from './Header/Header'
+export * from './NavMenu/NavMenu'
+export * from './Footer/Footer'
+export * from './MainArticle/MainArticle'
+export * from './Button/Button'
+export * from './Article/Article'

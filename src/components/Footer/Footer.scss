@@ -1,0 +1,23 @@
+@use '../../styles/rwd' as *;
+@import '../../styles/variables';
+
+.footer {
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  height: $footer;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: $yellow;
+    line-height: 28px;
+
+    &__img {
+      height: 80px;
+    }
+  }
+}
